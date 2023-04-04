@@ -1,0 +1,15 @@
+.big{
+    
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    /* background: linear-gradient(90deg, rgb(77, 77, 199) , rgb(96, 40, 185), rgb(17, 15, 31)); */
+    background-image: url('/assets/image/back-to-school-g529332993_1920.jpg');
+    background-size:auto;
+    /* background-repeat: no-repeat; */
+}
+.contents{
+    position: relative;
+    top: 200px;
+}
+

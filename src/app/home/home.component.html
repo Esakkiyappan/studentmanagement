@@ -1,0 +1,62 @@
+<div class="big">
+  <div class="container ">
+    <div class="row py-5">
+
+      <div class="col-md-6 small py-5">
+        <h1>Admin Home Page </h1>
+        <br><br>
+        <form action="" [formGroup]="adminhome" (ngSubmit)="adminsubmit()">
+          <mat-form-field appearance="outline">
+            <mat-label>semester</mat-label>
+            <mat-select formControlName="semester" (selectionChange)="onBookChange($event)">
+              <mat-option value="1">I</mat-option>
+              <mat-option value="2">II</mat-option>
+            </mat-select>
+          </mat-form-field><br><br>
+        </form>
+      </div>
+      <div class="col-md-2"></div>
+
+
+      <div class="col-md-4 py-5" id="semdiv" *ngIf="hide">
+
+        <h1>Sem Page</h1>
+        <br><br>
+        <form action="" [formGroup]="semform" (ngSubmit)="semsubmit()">
+
+          <mat-form-field appearance="outline">
+            <mat-label>Registertion Number</mat-label>
+            <input matInput placeholder=" Enter Student Register NO" formControlName="registerno">
+          </mat-form-field><br><br>
+
+          <mat-form-field appearance="outline">
+            <mat-label>Student Name</mat-label>
+            <input matInput placeholder=" Enter Student Name" formControlName="studentname">
+          </mat-form-field><br><br>
+
+          <mat-form-field appearance="outline">
+            <mat-label>Academy Year</mat-label>
+            <input matInput placeholder="Year" formControlName="year">
+          </mat-form-field><br><br>
+          <div class="sem">
+            <div class="subdata">
+              <ul *ngFor="let d of alldata">
+                <li class="semtd">{{d.subject}}</li>
+                <br>
+              </ul>
+            </div>
+            <div class="subval">
+              <ul>
+                <li><input type="text" class="form-control w-50" formControlName="sub1"></li>
+                <br>
+                <li><input type="text" class="form-control w-50" formControlName="sub2"></li>
+              </ul>
+            </div>
+          </div>
+          <input type="submit" class="btn btn-primary">
+
+        </form>
+      </div>
+    </div>
+  </div>
+</div>

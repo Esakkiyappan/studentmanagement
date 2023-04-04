@@ -1,0 +1,19 @@
+<div class="big">
+    <div class="container py-5">
+      <form action=""  [formGroup]="loginform" (ngSubmit)="loginsubmit()">
+        <mat-form-field appearance="outline">
+            <mat-label>Username</mat-label>
+            <input matInput placeholder="Username" formControlName="username">
+          </mat-form-field><br><br>
+          <mat-form-field appearance="outline">
+            <mat-label>Password</mat-label>
+            <input matInput type="password" placeholder="password" formControlName="password">              
+          </mat-form-field>
+<br>
+          <input type="submit" class="btn btn-primary">
+
+          <br><br>
+          <a routerLink="/studentregister">register</a>
+        </form>
+    </div>
+</div>

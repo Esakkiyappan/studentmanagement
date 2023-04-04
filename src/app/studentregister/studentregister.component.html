@@ -1,0 +1,35 @@
+<div class="big">
+    <div class="container py-5">
+
+        <form action="" [formGroup]="registerform" (ngSubmit)="registersubmit()">
+        
+        <mat-form-field appearance="outline">
+            <mat-label>Outline form field</mat-label>
+            <input matInput placeholder="name" formControlName="name">
+          </mat-form-field>
+          <br>
+          <mat-form-field appearance="outline">
+            <mat-label>Outline form field</mat-label>
+            <input matInput placeholder="password" formControlName="password">
+          </mat-form-field><br>
+          <mat-form-field appearance="outline">
+            <mat-label>Outline form field</mat-label>
+            <input matInput placeholder="confirm password" formControlName="cfpassword">
+          </mat-form-field>
+          <br>
+          <mat-form-field appearance="outline">
+            <mat-label>Outline form field</mat-label>
+            <input matInput placeholder="registerno" formControlName="registerno">
+          </mat-form-field>
+          <br>
+          <mat-form-field appearance="outline">
+            <mat-label>Outline form field</mat-label>
+            <input matInput placeholder="date of birth" formControlName="dob">
+          </mat-form-field>
+          <br>
+          <br>
+          <input type="submit" class="btn btn-primary">
+        </form>
+    </div>
+
+</div>

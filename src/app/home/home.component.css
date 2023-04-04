@@ -1,0 +1,31 @@
+.big{
+    background: linear-gradient(45deg,rgb(48, 48, 182),blue);
+    height: 200vh;
+}
+
+
+#semdiv{
+    background-color: azure;
+    border-radius: 20px;
+}
+.semtd{
+    padding-right: 20px;
+}
+/* .subdata{
+    display: flex;
+} */
+.subval{
+    display: flex;
+}
+.sem{
+    display: flex;
+}
+ul li{
+    list-style: none;
+}
+.small{
+    background-color: white;
+    height: 300px;
+    border: 2px solid black;
+    border-radius: 20px;
+}
